@@ -16,13 +16,38 @@
             <input type="text" id="last name" placeholder="enter your last name"><br><br>
             <label>patient ID</label><br>
             <input type="password" id="pid" placeholder="enter your secret id"><br><br>
-            <label>where do you live hehehehehehehehehehehehe</label><br>
+            <label>when are you born</label><br>
             <input type="date" id="dob">
         </fieldset><br><br><br><br><br><br><br>
         <fieldset>
             <legend>Why Are You Visiting</legend>
-            <label> choose your doctor</label>
-        </fieldset>
+            <label> choose your doctor</label><br>
+            <select id="doctor">
+                <option value=" ">-------------- select doctor --------------</option>
+                <option value="dr.Elon">Dr.Elon-general</option>
+                <option value="dr.Bill">Dr.Bill-teeth</option>
+                <option value="dr.Stickman 🔥🔴veyrax🔴🔥">Dr.Stickman 🔥🔴veyrax🔴🔥-bones</option>
+            </select><br><br><br>
+            <label>why are you visiting</label><br>
+            <input type="radio" name="r" value="cold">cold <br>
+            <input type="radio" name="r" value="fever">fever <br>
+            <input type="radio" name="r" value="bone problem">bone problem <br>
+            <input type="radio" name="r" value="checkup">checkup <br>
+            <input type="radio" name="r" value="tooth problem">tooth problem <br><br>
+
+            <label>any notes for the doctor?</label><br>
+            <textarea id="notes" rows="4" cols="45" placeholder="e. g. i had a sore throath for 7 years, 3 months, 27 days, 3 hours, 21 minutes and 32.47 seconds"></textarea>
+        </fieldset><br><br><br>
+        <fieldset><legend>preffered visit days</legend>
+            <input type="checkbox" value="mon"> monday <br>
+            <input type="checkbox" value="tue"> tuesday <br>
+            <input type="checkbox" value="wed"> wednesday <br>
+            <input type="checkbox" value="thu"> thursday <br>
+            <input type="checkbox" value="fri"> friday <br>
+            <input type="checkbox" value="sat"> saturday <br>
+            <input type="checkbox" value="sun"> sunday <br>
+        </fieldset><br>
+        <input type="submit" value="book my appointment">
 
     </form>
 </body>
