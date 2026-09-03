@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>book form</title>
+    </head>
+    <body>
+        <h1>book fair form</h1>
+        <form action="">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label> first name</label> <br>
+                <input type="text" id="first name" placeholder="enter your first name"><br><br>
+                <label>last name</label> <br>
+                <input type="text" id="last name" placeholder="enter your last name"><br><br>
+                <label>when are you born</label><br>
+                <input type="date" id="dob">
+            </fieldset><br><br><br><br><br><br><br>
+            <fieldset>
+                <legend>book type</legend>
+                <label> select your book type</label><br>
+                <select id="doctor">
+                    <option value=" ">-------------- select book type --------------</option>
+                    <option value="fiction">fiction</option>
+                    <option value="non fiction">non fiction </option>
+                    <option value="horror">horror</option>
+                    <option value="fantasy">fantasy</option>
+                    <option value="thriller">thriller</option>
+                    <option value="other">other</option>
+                </select><br><br><br>
+                <label>other</label><br>
+                <input type="text" id="other" placeholder="other type of book"><br><br>
+
+                <label>what level book</label><br>
+                <input type="radio" name="r" value="1-3">1-3 <br>
+                <input type="radio" name="r" value="4-6">4-6 <br>
+                <input type="radio" name="r" value="7-10">7-10 <br>
+                <input type="radio" name="r" value="checkup">11-13 <br>
+                <input type="radio" name="r" value="tooth problem">14-16+ <br><br>
+        
+                <label>any extra information for us?</label><br>
+                <textarea id="notes" rows="4" cols="45"
+                    placeholder="e. g. page 13 and 84 is toren apart"></textarea>
+            </fieldset><br><br><br>
+            <fieldset>
+                <legend>preffered visit days</legend>
+                <input type="checkbox" value="mon"> monday <br>
+                <input type="checkbox" value="tue"> tuesday <br>
+                <input type="checkbox" value="wed"> wednesday <br>
+                <input type="checkbox" value="thu"> thursday <br>
+                <input type="checkbox" value="fri"> friday <br>
+                <input type="checkbox" value="sat"> saturday <br>
+                <input type="checkbox" value="sun"> sunday <br>
+            </fieldset><br>
+            <input type="submit" value="book my appointment">
+        
+        </form>
+    </body>
+</html>
