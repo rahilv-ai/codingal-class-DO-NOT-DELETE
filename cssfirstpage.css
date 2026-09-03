@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to left, blueviolet, rgb(32, 108, 250));
+    background-position: top center;
+    font-family: Arial, sans-serif;
+}
+.page-header{
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 0), rgb(41, 195, 41)) ;
+    border-radius: 16px;
+    text-align: center;
+    color: rgb(26, 26, 26);
+}
+.fact-card{
+    background-color: rgb(131, 31, 134);
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+}
+.star{
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    border-radius: 100%;
+    animation: rgb 3s infinite alternate;
+}
+@keyframes rgb{
+    0%{background-color: red;}
+    10%{background-color: orange;}
+    20%{background-color: yellow;}
+    30%{background-color: yellowgreen;}
+    40%{background-color: lime;}
+    50%{background-color: rgb(52, 186, 230);}
+    60%{background-color: blue;}
+    70%{background-color: blueviolet;}
+    80%{background-color: violet;}
+    90%{background-color: rgb(225, 66, 172);}
+    100%{background-color: rgb(231, 59, 84);}
+}
+.footer {
+    text-align: center;
+    color: coral;
+    font-size: x-large;
+}
