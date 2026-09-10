@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>playermenu.com</title>
+        <style>
+            body {
+                font-family: Arial;
+                background-color: beige;
+                padding: 30px;
+                text-align: center;
+            }
+            h1 {color: blueviolet;}
+            h1 + p {
+                background-color: rgb(240, 215, 125);
+                padding: 10px 20px;
+                border-radius: 8px;
+                color: rgb(229, 144, 26);
+                display: inline-block;
+            }
+            ul {padding: 0; margin-top: 20px;}
+            ul > li {
+                list-style: none;
+                font-size: 18px;
+                font-weight: bold;
+                background: #e9b562;
+                color: #5d4037;
+                padding: 10px 20px;
+                margin: 6px auto;
+                width: 260px;
+                border-radius: 8px;
+            }
+            ul li:nth-child(3) {
+                color: #e65c00;
+                background: #ffe082;
+            }
+            .desc {
+                color: #555;
+                margin-top: 20px;
+                font-size: 15px;
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .desc::first-letter {
+                font-size: 220%;
+                color: #e65c00;
+                font-weight: bold;
+            }
+            .links {margin-top: 25px;}
+            a {
+                color: #e65c00;
+                text-decoration: none;
+                font-size: 15px;
+                margin: 0 50px;
+                padding: 8px 18px;
+                border: 2px solid #e65c00;
+                border-radius: 8px;
+            }
+            a:hover {
+                background: #e65c00;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My Player Menu</h1>
+        <p>pick your favorite map</p>
+
+        <ul>
+            <li>volcano</li>
+            <li>snowy mountains</li>
+            <li>remote island (new version)</li>
+            <li>grasslands</li>
+            <li>castle in the sky</li>
+            <li>prison</li>
+        </ul>
+        <p class="desc">
+        most islands have been worked hard on with lots of effort and lots of details, find puzzles throughout the world of adventures.
+        wander around finish the puzzles find what you deserve in a place you remember...</p>
+
+        <div class="links"></div>
+        <a href="#">play now</a>
+        <a href="#">find more in the official page</a>
+    </body>
+</html>
