@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>the spooky science lab</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+    <style>
+        body {
+            background-color: rgb(253, 253, 180);
+            font-family: arial, sans-serif;
+        }
+        .jumbotron {
+            background-color: rgb(255, 173, 73);
+            border-left: 6px solid rgb(155, 11, 11);
+        }
+        .jumbotron h1 {
+            color: rgb(155, 11, 11);
+        }
+        .section-title {
+            color: rgb(155, 11, 11);
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+    <body>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1>my science lab</h1>
+                <p class="lead">
+                welcome to the lab of doom, this is where dangerous experiments often occur and create dangerous creatures.
+                </p>
+                <button class="btn btn-light">the skeleton</button>
+                <button class="btn btn-danger">murderer</button>
+                <button class="btn btn-dark">ghoul</button>
+                <button class="btn btn-warning">phantom</button>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="section-title">
+                succesfull experiments <span class="badge badge-danger">4</span>
+            </h2>
+            <p>the skeleton <span class="badge badge-light"> 3 succesful</span></p>
+            <p>murderer <span class="badge badge-danger"> 4 succesful</span></p>
+            <p>ghoul <span class="badge badge-dark">6 failed</span></p>
+            <p>phantom <span class="badge badge-warning">5 succesful</span></p>
+        </div>
+        <h2 class="section-title">
+            <p>the skeleton</p>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-light" style="width: 60%;"><mark>60%</mark></div>
+            </div>
+            <p>murderer</p>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-danger" style="width: 70%;">70%</div>
+            </div>
+            <p>phantom</p>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-warning" style="width: 80%;">80%</div>
+            </div>
+        </h2>
+    </body>
+</html>
