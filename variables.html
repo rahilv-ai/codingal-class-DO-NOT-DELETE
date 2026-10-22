@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variables</title>
+        <style>
+            body {
+                background: #121212;
+                color: #fff;
+                font-family: sans-serif;
+                text-align: center;
+            }
+            #result {
+                font-size: 22px;
+                color: #0fc;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>🎮👾 Level Up Calculator 👾🎮</h1>
+        <p id="result"></p>
+
+        <script>
+            var XPhave = 500;
+            var XPneed = 25;
+            var ADDlevel = XPhave / XPneed;
+            document.getElementById("result").innerHTML = "✨ Level: " + ADDlevel + " upgrade now ✨"
+        </script>
+    </body>
+</html>
