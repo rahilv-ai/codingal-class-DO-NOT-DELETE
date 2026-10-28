@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Study Progress Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f4f7ff;
+            font-family: Arial, sans-serif;
+        }
+
+        .jumbotron {
+            background-color: #e8edff;
+            border-left: 6px solid #1e1e1e;
+        }
+
+        .jumbotron h1 {
+            color: #1e1e1e;
+        }
+
+        .section-title {
+            color: #1e1e1e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1>The Best Game Ever</h1>
+            <p class="lead">Learn everything about the best game ever made by vihaan</p>
+
+            <button class="btn btn-primary">sprites and level</button>
+            <button class="btn btn-success">animation and cutscenes</button>
+            <button class="btn btn-warning">player mechanics</button>
+            <button class="btn btn-danger">code functions</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h2 class="section-title">plan ideas <span class="badge badge-dark">25</span></h2>
+
+        <p>sprites and level <span class="badge badge-primary">5 sprites and 4 level ideas</span></p>
+        <p>animation and cutscenes <span class="badge badge-success">7 animation and 3 cutscene ideas (need a LOT more)</span></p>
+        <p>player mechanics <span class="badge badge-warning">6 ideas</span></p>
+        <p>code functions <span class="badge badge-danger">no progress</span></p>
+
+        <h2 class="section-title">game progress</h2>
+
+        <p>sprites and level</p>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-primary" style="width: 47%">47%</div>
+        </div>
+
+        <p>animation and cutscenes</p>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-success" style="width: 28%">28%</div>
+        </div>
+
+        <p>player mechanics</p>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-warning" style="width: 34%">34%</div>
+        </div>
+
+        <p>code functions</p>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-danger" style="width: 3%">3%</div>
+        </div>
+
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
