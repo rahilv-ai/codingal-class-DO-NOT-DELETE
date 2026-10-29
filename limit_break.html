@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>the liimit break</title>
+    </head>
+    <body>
+        <h2>The Limit Break</h2>
+        <p>
+            a <b>Limit Break</b> is a powerful awakening of the gods from the <b>StickGod-Verse</b>.
+        </p>
+        <p id="demonstration"></p>
+        <script>
+            var speed, acceleration, control, force, limit;
+            speed = 99;
+            acceleration = speed * 0.09;
+            control = 97;
+            force = control / 4;
+            limit = Math.floor (speed + acceleration + force);
+
+            document.getElementById("demonstration").innerHTML = "Limit Break Limit : " + limit;
+        </script>
+    </body>
+</html>

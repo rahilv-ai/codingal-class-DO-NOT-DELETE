@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>loot seeker</title>
+        <style>
+            body {
+                background: #111;
+                color: white;
+                font-family: 'Courier New', monospace;
+                text-align: center;
+                padding: 30px;
+            }
+            .box {
+                background: #222;
+                border: 2px solid #fdd700;
+                border-radius: 8px;
+                display: inline-block;
+                padding: 20px;
+            }
+            #demo {
+                font-size: 24px;
+                color: #fdd700;
+                font-weight: bold;
+            }
+        </style>
+        <body>
+            <div class="box">
+                <h2>Loot Multiplier</h2>
+                <p id="demo"></p>
+            </div>
+            <script>
+                var coin = 50;
+                var Multiplier = 3
+                var totalGold = coin * Multiplier
+
+                document.getElementById("demo").innerHTML = "Total Gold Stacked: " + totalGold
+            </script>
+        </body>
+    </head>
+</html>
