@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>the mysterious man</title>
+    </head>
+    <body>
+        <h1>the mysterious man and his disciple</h1>
+        <button onclick="EnterMysteriousWarehouse()">Enter Mysterious Hideout</button>
+        <p id="outside"></p>
+        <p id="inside"></p>
+
+        <script>
+            var globalman = "the Mysterious Man can go anywhere hes just weaker then the brothers"
+
+            function EnterMysteriousWarehouse() {
+                var localman = "the disciple can only go to places the Mysterious man allows"
+                document.getElementById("inside").innerText = "Inside Hideout: " + globalman + " and " + localman;
+
+            }
+
+            document.getElementById("outside").innerText = localman;
+        </script>
+    </body>
+</html>

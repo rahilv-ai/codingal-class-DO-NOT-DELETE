@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>functions in html</title>
+    </head>
+    <body>
+    <h1>🍪 mass cookie generator 🍪</h1>
+    <button onclick="bake(7504505)">Cooky the Cookies</button>
+
+    <h2 id="result"></h2>
+    <script>
+        function bake(cookies, multiplier) {
+            if (multiplier === undefined) {
+                multiplier = 2;
+            }
+            document.getElementById("result").innerText = "🍪 Cookyd Cookies " + (cookies * multiplier);
+        }
+    </script>
+    </body>
+</html>
