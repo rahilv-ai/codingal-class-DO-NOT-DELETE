@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>change position</title>
+        </head>
+    <body>
+        <h2>Strings will pull on you 👻</h2>
+        <p>basic methods of pulling everyone's string</p>
+        <script>
+            var str = "AmAzInGiAmSuPeRsTrInG";
+            document.write("<br>Uppercase: ");
+            document.write(str.toUpperCase());
+
+            document.write("<br>Lowercase: ");
+            document.write(str.toLowerCase());
+
+            document.write("<br>does it start with i? ");
+            document.write(str.startsWith("i"));
+            
+            var str1 = "i learnt about pyhton";
+            var test_str = new RegExp("java");
+            var res= test_str.test(str1);
+            document.write("<br>does it contain test? ");
+            document.write(res);
+        </script>
+    </body>
+</html>
