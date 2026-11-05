@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Void Lord ID</title
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <style>
+                body {
+                    background-color: beige;
+                }
+                h1 {
+                    color: rgb(146, 25, 73);
+                }
+                .card-label {
+                    font-size: 11px;
+                    color: #999;
+                    text-transform: uppercase;
+                }
+                </style>
+    </head>
+    <body class="py-4">
+        <div class="container">
+            <h1 class="mb-1">Void Lord ID</h1>
+            <p class="text-muted mb-4">Welcome to the Void Lord ID page!</p>
+
+            <div class="card shadow-sm mb-3" style="max-width: 400px;">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: rgb(146, 25, 73);">Void Lord ID</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span class="card-label d-clock">name</span>
+                            <strong id="name">-</strong>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="card-label d-clock">archetype</span>
+                            <strong id="archetype">-</strong>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="card-label d-clock">power</span>
+                            <strong id="power">-</strong>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="card-label d-clock">weakness</span>
+                            <strong id="weakness">-</strong>
+                        </li>
+                    </ul>
+                
+        </div>
+        <script>
+            var VoidLordID = {
+                name: "VoidLord",
+                archetype: "The Destroyer of the Multiverse",
+                power: "darkness",
+                weakness: "the 2 brothers",
+            };
+
+            var nameEl = document.getElementById("name");
+            var archetypeEl = document.getElementById("archetype");
+            nameEl.textContent = VoidLordID.name;
+            archetypeEl.textContent = VoidLordID.archetype
+
+        </script>
+    </body>
+</html>
