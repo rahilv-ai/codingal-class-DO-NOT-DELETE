@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>my game profile</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1> mon game profile</h1>
+    <button onclick="ShowProfile()">show profile</button>
+
+    <div>name: <span id="name"></span></div>
+    <div>score: <span id="score"></span></div>
+    <div>top score: <span id="topscore"></span></div>
+    <div>rank: <span id="rank"></span></div>
+    <div>greeting: <span id="greeting"></span></div>
+    <div>coins: <span id="coins"></span></div>
+    <div>bonus level: <span id="bonuslevel"></span></div>
+    <div>team name: <span id="teamname"></span></div>
+
+    <script>
+        function ShowProfile() {
+            let name = "Demon God";
+            let myscore = 120;
+            let highscore = 280;
+            let bonus = null;
+            let team;
+
+            let IsTopScore = myscore == highscore;
+
+            let rank;
+            if (myscore >= 100) {
+                rank = "unreal";
+            } else if (myscore >= 80) {
+                rank = "champion";
+            } else {
+                rank = "gold"
+            }
+
+            let hour = new Date().getHours();
+            let greeting;
+            if (hour < 12) {
+                greeting = "Good Morning!"
+            } else if (hour < 17) {
+                greeting = "Good Afternoon!"
+            }
+            }
+    </script>
+</body>
+
+</html>
