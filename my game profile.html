@@ -4,7 +4,36 @@
 <head>
     <title>my game profile</title>
     <style>
+        body {
+            background: beige;
+            font-weight: bold;
+            font-size: x-large;
+            color:rgb(4, 91, 4);
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: rgb(2, 62, 102);
+            font-family: 'Courier New', Courier, monospace;
+        }
 
+        button {
+            background: yellow;
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            border: 2px solid yellowgreen;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        div {
+            border: 2px solid rgb(254, 131, 0);
+            margin: 7.5px auto;
+            padding-left: 20px;
+            text-align: left;
+            border-radius: 10px;
+            width: 300px;
+
+        }
     </style>
 </head>
 
@@ -46,7 +75,28 @@
                 greeting = "Good Morning!"
             } else if (hour < 17) {
                 greeting = "Good Afternoon!"
+            } else if (hour < 20) {
+                greeting = "Good Evening"
+            } else  {
+                    greeting = "Good Night"
             }
+
+            let coins = "";
+            let count = 0;
+            while (count < 5) {
+                coins = coins + "* ";
+                count = count + 1
+            }
+
+
+            document.getElementById("name").innerHTML = name;
+            document.getElementById("score").innerHTML = myscore + " out of " + highscore;
+            document.getElementById("topscore").innerHTML = IsTopScore;
+            document.getElementById("rank").innerHTML = rank;
+            document.getElementById("greeting").innerHTML = greeting;
+            document.getElementById("coins").innerHTML = coins;
+            document.getElementById("bonuslevel").innerHTML = bonus;
+            document.getElementById("teamname").innerHTML = team;
             }
     </script>
 </body>
