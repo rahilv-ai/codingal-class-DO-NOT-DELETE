@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>puzzles</title>
+    </head>
+    <body>
+        <h1>puzzles</h1>
+        <button onclick="showpuzzles()">show Puzzles</button>
+        <div class="cards">
+            <div id="card1"></div>
+            <div id="card2"></div>
+            <div id="card3"></div>
+        </div>
+        <script>
+            class puzzle {
+                constructor (name, puzzle) {
+                    this.name = name;
+                    this.puzzle = puzzle;
+                }
+                describe() {
+                    return this.name + ": " + this.puzzle;
+                }
+            }
+            function showpuzzles() {
+                let p1 = new puzzle("the crushing seaspikes", "the puzzle is to survive each round and find the button");
+                let p2 = new puzzle("the cold flames", "the puzzle is to light up each flame in the correct time in sync");
+                let p3 = new puzzle("the riddles of the barbarian", "the puzzle is to answer all the riddles of the barbarian correctly");
+
+                document.getElementById("card1").innerHTML =
+                 "<div class = 'card'><div class = 'puzzle-name'>" + p1.name + "</div>" + "<div class = 'puzzle-puzzle'>" + p1.describe() + "</div></div>";
+
+                document.getElementById("card2").innerHTML =
+                    "<div class = 'card'><div class = 'puzzle-name'>" + p2.name + "</div>" + "<div class = 'puzzle-puzzle'>" + p2.describe() + "</div></div>";
+                document.getElementById("card3").innerHTML =
+                    "<div class = 'card'><div class = 'puzzle-name'>" + p3.name + "</div>" + "<div class = 'puzzle-puzzle'>" + p3.describe() + "</div></div>";
+            }
+        </script>
+    </body>
+</html>
