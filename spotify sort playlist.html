@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spotify Sort</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            body {
+                background: white;
+            }
+            h1, h3 {
+                color: darkviolet;
+            }
+            .box {
+                background: white;
+                color: darkviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container py-4">
+            <h1 class="mb-1">My Playlist Sorter</h1>
+            <p class="text-muted mb-4">Sort your Spotify Playlist Using HTML</p>
+
+            <div class="card mb-4">
+                <div class="body">
+                    <h3 class="card-title">Song Names</h3>
+                    <button class="btn btn-primary" onclick="sortAZ()">Sort A to Z
+                    </button>
+                    <button class="btn btn-primary" onclick="sortZA()">Sort Z to A
+                    </button>
+                    <div id="nameresult" class="box p-3 mt-3 rounded"></div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="body">
+                    <h3 class="card-title">Play Counts</h3>
+                    <button class="btn btn-primary mr-2" onclick="sortLeast()">Least Played First
+                    </button>
+                    <button class="btn btn-primary" onclick="sortMost()">Most Played First
+                    </button>
+                    <div id="countresult" class="box p-3 mt-3 rounded"></div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="body">
+                    <h3 class="card-title">Label Every Play Count</h3>
+                    <button class="btn btn-primary mr-2" onclick="addLabel()">Add Plays Label
+                    </button>
+                    <div id="labelresult" class="box p-3 mt-3 rounded"></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var songs = ["payphone", "stay", "stereo hearts", "sea of thieves", "boom padi dese", "i'm still standing"]
+        </script>
+    </body>
+</html>
